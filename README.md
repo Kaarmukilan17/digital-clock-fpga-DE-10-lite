@@ -38,6 +38,7 @@ This project implements a **real-time digital clock** on a **7-segment display**
 
 [![Digital Clock](https://github.com/user-attachments/assets/fe29242a-be32-4692-9779-ffe75c0b9938)](https://youtu.be/4mgWPRYlsXI)
 
+Click the image to watch a demo on YouTube.
 
 Refer to the project report **DIGITAL_CLOCK_FPGA_DE10.pdf** - VIDEO LINKS section for demo videos showcasing the result after each version update.
 
