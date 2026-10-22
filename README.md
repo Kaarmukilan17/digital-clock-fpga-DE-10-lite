@@ -4,7 +4,7 @@ This project implements a **real-time digital clock** on a **7-segment display**
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Real-time clock**: Updates every second using a 50 MHz clock divider.
 - **Manual time setting mode**: Increment hours and minutes via push buttons.
@@ -14,14 +14,14 @@ This project implements a **real-time digital clock** on a **7-segment display**
 
 ---
 
-## 🧰 Tools Used
+## Tools Used
 
 - **Hardware**: DE10-Lite FPGA Development Board  
 - **Software**: Intel Quartus Prime Lite Edition  
 
 ---
 
-## 🎮 Switch & Button Mapping
+## Switch & Button Mapping
 
 | Switch/Button | Label  | Function                                  |
 |---------------|--------|-------------------------------------------|
@@ -34,15 +34,16 @@ This project implements a **real-time digital clock** on a **7-segment display**
 
 ---
 
-## 📸 Hardware Demonstration
+## Hardware Demonstration
 
-![image](https://github.com/user-attachments/assets/fe29242a-be32-4692-9779-ffe75c0b9938)
+[![Digital Clock](https://github.com/user-attachments/assets/fe29242a-be32-4692-9779-ffe75c0b9938)](https://youtu.be/4mgWPRYlsXI)
 
-Refer to the project report **DIGITAL_CLOCK_FPGA_DE10** - VIDEO LINKS for demo videos showcasing the result after each version update.
+
+Refer to the project report **DIGITAL_CLOCK_FPGA_DE10.pdf** - VIDEO LINKS section for demo videos showcasing the result after each version update.
 
 ---
 
-## 📍 Pin Assignment Instructions
+##  Pin Assignment Instructions
 
 1. Download the pin assignment file: `DE10_Lite_pin_assignments.csv` from the GitHub repo.
 2. Open Quartus Prime project where the Verilog file is saved.
@@ -67,7 +68,7 @@ Refer to the project report **DIGITAL_CLOCK_FPGA_DE10** - VIDEO LINKS for demo v
 
 ---
 
-## 🗂️ Changelog Summary (v1.0.0 – v1.9.0)
+## Changelog Summary (v1.0.0 – v1.9.0)
 
 | Version | Changes                                                               |
 |---------|------------------------------------------------------------------------|
@@ -84,27 +85,7 @@ Refer to the project report **DIGITAL_CLOCK_FPGA_DE10** - VIDEO LINKS for demo v
 
 ---
 
-## 🔧 Future Improvements / Known Issues
-
-- 🕒 **Manual time setting needs debouncing**  
-  Currently, switches used for time-setting cause continuous increment while held down.  
-  ✅ *Fix*: Add **edge detection** or **debounce logic**.
-
-- ⏱ **Limited precision during time setting**  
-  No pulse generation or delay logic means rapid switching may cause skipped values.  
-  ✅ *Fix*: Use one-pulse-per-press logic.
-
-- 🧮 **No segment multiplexing**  
-  Each digit uses a dedicated output, consuming more I/O pins.  
-  ✅ *Fix*: Implement **digit multiplexing** to reduce pin usage.
-
-- ⚠️ **Rapid prototyping**  
-  This project was built in just one day, so minor optimizations were skipped.
-  Core features are hardware-tested, but details like pin explanations, simulations, and bug logs were minimized due to time constraints.
-
----
-
-## 📄 License
+## License
 
 This project is shared under the **MIT License**, meaning:
 
@@ -117,7 +98,7 @@ Please refer to the [LICENSE](LICENSE) file for full details.
 
 ---
 
-## 👤 Authors & Contributors
+## Authors & Contributors
 
 - **Kaarmukilan** — Developer, GitHub manager, documentation  
 - **Bala Murugan** — Contributor (logic implementation & testing)  
